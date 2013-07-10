@@ -17,7 +17,11 @@ nvm use v0.10.12
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
+sudo apt-get install -y npm
 npm install -g jshint
+npm install cheerio
+npm install restler
+npm install commander
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
@@ -43,4 +47,9 @@ ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
+
+#git configuration
+git config --global user.name "Yu Jin"
+git config --global user.email yujin.umn@gmail.com
+
 
