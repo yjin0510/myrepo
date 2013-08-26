@@ -4,7 +4,7 @@
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
-sudo apt-get install -y git-core
+#sudo apt-get install -y git-core
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 #heroku
@@ -26,6 +26,20 @@ npm install commander
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
+
+# Install firefox and xvfb for capturing web pages
+sudo aptitude -y install xvfb #an X client
+sudo aptitude -y install firefox
+sudo apt-get -y install unzip
+sudo apt-get -y install openjdk-7-jdk #java
+
+#setting up display
+Xvfb :99
+export DISPLAY=:99
+
+
+
+
 
 ## Install emacs24
 ## https://launchpad.net/~cassou/+archive/emacs
